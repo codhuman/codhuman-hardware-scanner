@@ -1,0 +1,147 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema pedra_hard_scan
+-- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `pedra_hard_scan` ;
+
+-- -----------------------------------------------------
+-- Schema pedra_hard_scan
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `pedra_hard_scan` DEFAULT CHARACTER SET utf8 ;
+USE `pedra_hard_scan` ;
+
+-- -----------------------------------------------------
+-- Table `pedra_hard_scan`.`cpu`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `pedra_hard_scan`.`cpu` ;
+
+CREATE TABLE IF NOT EXISTS `pedra_hard_scan`.`cpu` (
+  `id` VARCHAR(255) NOT NULL,
+  `clockSpeed` FLOAT NOT NULL,
+  `coreCount` INT NOT NULL,
+  `manufacturer` VARCHAR(255) NULL DEFAULT NULL,
+  `model` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `pedra_hard_scan`.`gpu`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `pedra_hard_scan`.`gpu` ;
+
+CREATE TABLE IF NOT EXISTS `pedra_hard_scan`.`gpu` (
+  `id` VARCHAR(255) NOT NULL,
+  `manufacturer` VARCHAR(255) NULL DEFAULT NULL,
+  `memorySize` INT NOT NULL,
+  `model` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `pedra_hard_scan`.`ram`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `pedra_hard_scan`.`ram` ;
+
+CREATE TABLE IF NOT EXISTS `pedra_hard_scan`.`ram` (
+  `id` VARCHAR(255) NOT NULL,
+  `manufacturer` VARCHAR(255) NULL DEFAULT NULL,
+  `size` INT NOT NULL,
+  `type` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `pedra_hard_scan`.`storage`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `pedra_hard_scan`.`storage` ;
+
+CREATE TABLE IF NOT EXISTS `pedra_hard_scan`.`storage` (
+  `id` VARCHAR(255) NOT NULL,
+  `manufacturer` VARCHAR(255) NULL DEFAULT NULL,
+  `model` VARCHAR(255) NULL DEFAULT NULL,
+  `size` INT NOT NULL,
+  `type` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `pedra_hard_scan`.`hardwareinfo`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `pedra_hard_scan`.`hardwareinfo` ;
+
+CREATE TABLE IF NOT EXISTS `pedra_hard_scan`.`hardwareinfo` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `cpu_id` VARCHAR(255) NOT NULL,
+  `ram_id` VARCHAR(255) NOT NULL,
+  `storage_id` VARCHAR(255) NOT NULL,
+  `gpu_id` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`, `cpu_id`, `ram_id`, `storage_id`, `gpu_id`),
+  INDEX `fk_hardwareinfo_gpu_idx` (`gpu_id` ASC) VISIBLE,
+  INDEX `fk_hardwareinfo_ram1_idx` (`ram_id` ASC) VISIBLE,
+  INDEX `fk_hardwareinfo_storage1_idx` (`storage_id` ASC) VISIBLE,
+  INDEX `fk_hardwareinfo_cpu1_idx` (`cpu_id` ASC) VISIBLE,
+  CONSTRAINT `fk_hardwareinfo_gpu`
+    FOREIGN KEY (`gpu_id`)
+    REFERENCES `pedra_hard_scan`.`gpu` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_hardwareinfo_ram1`
+    FOREIGN KEY (`ram_id`)
+    REFERENCES `pedra_hard_scan`.`ram` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_hardwareinfo_storage1`
+    FOREIGN KEY (`storage_id`)
+    REFERENCES `pedra_hard_scan`.`storage` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_hardwareinfo_cpu1`
+    FOREIGN KEY (`cpu_id`)
+    REFERENCES `pedra_hard_scan`.`cpu` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+AUTO_INCREMENT = 6
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `pedra_hard_scan`.`myentity`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `pedra_hard_scan`.`myentity` ;
+
+CREATE TABLE IF NOT EXISTS `pedra_hard_scan`.`myentity` (
+  `id` BIGINT NOT NULL,
+  `field` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `pedra_hard_scan`.`myentity_seq`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `pedra_hard_scan`.`myentity_seq` ;
+
+CREATE TABLE IF NOT EXISTS `pedra_hard_scan`.`myentity_seq` (
+  `next_val` BIGINT NULL DEFAULT NULL)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

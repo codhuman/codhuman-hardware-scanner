@@ -1,0 +1,46 @@
+
+try {
+   Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/byte_bank?user=root&password=root");
+   System.out.println("Recuperei a conexão");
+   connection.close();
+} catch (SQLException e) {
+   System.out.println(e);
+}
+
+
+
+
+{
+  "id": "4",
+  "cpu": "Intel Core i7",
+  "gpu": "NVIDIA GeForce GTX 1080",
+  "ram": "16GB",
+  "storage": "500GB SSD"
+}
+
+
+
+
+    @Transactional
+    public HardwareInfo save(HardwareInfo hardwareInfo) {
+        entityManager.persist(hardwareInfo);
+        return hardwareInfo;
+    }
+
+    // No entanto, o Quarkus usa o Hibernate como provedor JPA padrão
+    // e oferece uma maneira mais simplificada de trabalhar com transações
+    // usando a anotação @Transactional.
+    // public HardwareInfo save(HardwareInfo hardwareInfo) {
+    //     EntityTransaction transaction = entityManager.getTransaction();
+    //     try {
+    //         transaction.begin();
+    //         entityManager.persist(hardwareInfo);
+    //         transaction.commit();
+    //     } catch (Exception e) {
+    //         if (transaction.isActive()) {
+    //             transaction.rollback();
+    //         }
+    //         throw e;
+    //     }
+    //     return hardwareInfo;
+    // }
