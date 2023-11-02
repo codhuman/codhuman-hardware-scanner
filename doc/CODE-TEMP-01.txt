@@ -19,7 +19,18 @@ try {
 }
 
 
-
+{
+  "cpu": {
+    "manufacturer": "reinaldo1",
+    "model": "reinaldo1",
+    "coreCount": 2,
+    "clockSpeed": 20
+  },
+  "gpu": "NVIDIA GeForce GTX 1080",
+  "ram": "16GB",
+  "storage": "500GB SSD",
+  "hardwareInfo": "reinaldo 1212"
+}
 
     @Transactional
     public HardwareInfo save(HardwareInfo hardwareInfo) {
