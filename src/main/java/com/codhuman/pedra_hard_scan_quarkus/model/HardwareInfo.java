@@ -25,10 +25,10 @@ public class HardwareInfo {
         this.id = id;
     }
 
-    @OneToOne
-    @JoinColumn(name = "cpu_id")
-    private CPU cpu;
-    //  private String cpu;
+    // @OneToOne
+    // @JoinColumn(name = "cpu_id")
+    // private CPU cpu;
+    private String cpu;
 
     private String gpu;
     private String ram;

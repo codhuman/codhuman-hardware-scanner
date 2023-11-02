@@ -1,0 +1,1000 @@
+   44  ls
+   45  cd db-mysql-basico-v001/
+   46  ls
+   47  docker-compose up -d
+   48  mysql
+   49  docker-compose ls
+   50  docker-compose ls -a
+   51  docler compose ls
+   52  docker compose ls
+   53  docker compose ps
+   54  docker-compose ps
+   55  docker ps
+   56  docker-compose up
+   57  docker ps
+   58  docker-compose ps
+   59  docker-compose up -d
+   60  docker-compose ps
+   61  mysql -h localhost -u root -p
+   62  mysql -u root -p
+   63  sudo apt install mysql-client-core-8.0
+   64  mysql -u root -p
+   65  sudo service mysql start
+   66  /etc/init.d/mysql start
+   67  mysql --host 0.0.0.0 --port 3306 -ppass -u root
+   68  sudo mysql --host 0.0.0.0 --port 3306 -ppass -u root
+   69  docker ps
+   70  docker exec -it e557ced16e05 bash
+   71  docker ps
+   72  docker-compose down
+   73  docker ps
+   74  exit
+   75  history
+   76  ls
+   77  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   78  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   79  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+   80  apt-cache policy docker-ce
+   81  sudo apt install docker-ce
+   82  sudo systemctl status docker
+   83  sudo usermod -aG docker ${USER}
+   84  su - ${USER}
+   85  exit
+   86  cd codhuman/
+   87  cd git/
+   88  cd codhuman-infra-containers/
+   89  ls
+   90  cd db-mysql-basico-v001/
+   91  ls
+   92  cd docker/
+   93  ls
+   94  cd db
+   95  ls
+   96  cd ..
+   97  git status
+   98  ls
+   99  git add .
+  100  cd ..
+  101  git status
+  102  git add .
+  103  ls
+  104  ls -lah
+  105  ls
+  106  cd db-mysql-basico-v001/
+  107  ls
+  108  sudo rm -rf docker
+  109  ls
+  110  git config --global user.name "Reinaldo Pereira de Santana"
+  111  git config --global user.email reinaldopsantana@hotmail.com
+  112  ls
+  113  cd 092
+  114  cd 02-Dados/
+  115  ls
+  116  cd mariadb/
+  117  ls
+  118  cd dockerfile/
+  119  ls
+  120  cd dockerfile-mariadb-banco-vazio-001/
+  121  ls
+  122  docker build -t mariadb001 .
+  123  docker ps
+  124  docker ps -a
+  125  exit
+  126  ls
+  127  docker build -t mysql001 .
+  128  docker ls -a
+  129  docker ps -a
+  130  docker images ps
+  131  docker images ls
+  132  docker image list
+  133  docker run --name mysql001 -it bash
+  134  exit
+  135  ls
+  136  cd 2
+  137  cd 02-Dados/
+  138  ls
+  139  cd mariadb/
+  140  exit
+  141  ls
+  142  docker ps
+  143  docker ps -a
+  144  docker images -a
+  145  docker system prune --all --force --volumes
+  146  docker images -a
+  147  docker ps -a
+  148  ls
+  149  cd ..
+  150  ls
+  151  cd .. 
+  152  ls
+  153  cd docker-compose/
+  154  ls
+  155  docker compose up
+  156  docker-compose up
+  157  docker-compose up -d
+  158  docker ps -a
+  159  ls
+  160  cd docker/
+  161  ls
+  162  cd db/
+  163  ls
+  164  cd sql
+  165  ls
+  166  sudo vi CreateDatabase.sql
+  167  ls
+  168  cd ..
+  169  ls
+  170  cd ..
+  171  ls
+  172  cd ..
+  173  ls
+  174  docker-compose down
+  175  docker ps -a
+  176  docker-compose up -d
+  177  docker ps -a
+  178  docker-compose down
+  179  docker ps -a
+  180  docker images ls
+  181  docker images ls -a
+  182  docker ps -a
+  183  docker-compose down
+  184  docker-compose up -d
+  185  docker-compose rm -v -f db && docker-compose up
+  186  docker-compose rm -v -f db && docker-compose up -d
+  187  docker run -it mysql80_debian_001
+  188  doker ps -a
+  189  dokcer ps -a
+  190  docker ps -a
+  191  docker run -it 7dff
+  192  docker-compose logs -f
+  193  docker ps -a
+  194  doker container ls
+  195  docker container ls
+  196  docker exec -it mysql80_debian_001 /bin/bash
+  197  docker-compose rm -v -f db
+  198  doskce rps -a
+  199  docker ps -a
+  200  ls
+  201  docker-compose down
+  202  docker ps -a
+  203  docker container ls
+  204  docker images ls
+  205  docker-compose up
+  206  ls
+  207  cd docker/
+  208  ls
+  209  cd db
+  210  ls
+  211  rm -rf data
+  212  sudo rm -rf data
+  213  ls
+  214  cd ..
+  215  ls
+  216  docker-compose up
+  217  rm -rf ./docker/db/data/
+  218  sudo rm -rf ./docker/db/data/
+  219  docker-compose up
+  220  sudo rm -rf ./docker/db/data/
+  221  docker-compose up
+  222  sudo rm -rf ./docker/db/data/
+  223  docker-compose up
+  224  sudo rm -rf ./docker/db/data/
+  225  docker-compose up
+  226  sudo rm -rf ./docker/db/data/
+  227  man ping
+  228  ls
+  229  sudo apt update
+  230  sudo apt upgrade
+  231  history
+  232  ifconfig
+  233  sudo apt install net-tools
+  234  ifconfig
+  235  sudo apt update
+  236  sudo apt upgrade
+  237  ls
+  238  cd codhuman/
+  239  ls
+  240  cd git/
+  241  ls
+  242  cd codhuman-infra-containers/
+  243  ls
+  244  cd 02-Dados/
+  245  ls
+  246  cd mariadb/
+  247  ls
+  248  cd docker-compose/
+  249  ls
+  250  cd docker-compose-mariadb-banco-vazio-001/
+  251  ls
+  252  cd ..
+  253  ls
+  254  cd ..
+  255  ls
+  256  cd /
+  257  ls
+  258  exit
+  259  history
+  260  history > history.txt
+  261  docker --version
+  262  docker-compose --version
+  263  ls
+  264  cd codhuman/
+  265  ls
+  266  cd git
+  267  ls
+  268  cd codhuman-infra-containers/
+  269  ls
+  270  cd 02-Dados/
+  271  ls
+  272  cd mysql/
+  273  ls
+  274  cd docker-compose/
+  275  ls
+  276  cd docker/
+  277  ls
+  278  db
+  279  cd db
+  280  ls
+  281  cd ..
+  282  docker-compose up -d
+  283  mysql
+  284  docker-copose ls
+  285  docker-cmopose ls
+  286  docker-compose ls
+  287  docker-compose ls -a
+  288  docker-compose ps -a
+  289  mysql -h localhost -u root -p
+  290  mysql -h localhost -u rei -p
+  291  sudo mysql --host 0.0.0.0 --port 3306 -ppass -u root
+  292  sudo mysql --host 0.0.0.0 --port 3306 -ppass -u rei
+  293  sudo mysql --host 0.0.0.0 --port 3306 -ppass -u root
+  294  ifconfig
+  295  mysql -h localhost -u rei -p -e "123456"
+  296  sudo service mysql start
+  297  docker-compose down
+  298  docker-compose exec database mysql -u root -p
+  299  docker-compose ps -a
+  300  docker-compose up -it
+  301  docker-compose up
+  302  docker-compose exec server bash
+  303  docker-compose up
+  304  docker-compose up -d
+  305  docker-compose down
+  306  exit
+  307  pwd
+  308  pwd -L
+  309  pwd -P
+  310  pwd --help
+  311  pwd --version
+  312  pwd --v
+  313  pwd --logical
+  314  pwd --physical
+  315  /bin/pwd --version
+  316  type pwd
+  317  ls -l
+  318  ls
+  319  pwd
+  320  ln -s ./Music/local/downloads/logo /MusicSimbolico
+  321  sudo ln -s ./Music/local/downloads/logo /MusicSimbolico
+  322  ls -l
+  323  cd /Mus
+  324  cd Music
+  325  ls
+  326  cd ..
+  327  cd MusicSimbolico
+  328  sudo ln -s ./Music/local/downloads/logo ./MusicSimbolico
+  329  ls -l
+  330  sudo ln -s ./Music ./MusicSimbolico
+  331  rm MusicSimbolico 
+  332  sudo ln -s ./Music ./MusicSimbolico
+  333  ls
+  334  cd MusicSimbolico
+  335  pwd
+  336  pwd -P
+  337  pwd -L
+  338  history > history.txt
+  339  ls
+  340  code .
+  341  ls
+  342  cd Music
+  343  pwd
+  344  pwd -L
+  345  cd ..
+  346  cd MusicSimbolico
+  347  pwd
+  348  cd ..
+  349  ls
+  350  ls -l
+  351  cd MusicSimbolico
+  352  pwd
+  353  pwd -L
+  354  pwd -P
+  355  exit
+  356  ls
+  357  cd MusicSimbolico
+  358  pwd
+  359  pwd -P
+  360  pwd --help
+  361  sudo apt update
+  362  sudo apt upgrade
+  363  sudo apt update
+  364  node --version
+  365  node
+  366  sudo apt install nodejs
+  367  node
+  368  node --version
+  369  npm 
+  370  sudo apt install npm
+  371  npm
+  372  npm --version
+  373  exit
+  374  ls
+  375  ls history.txt
+  376  ls -lah history.txt
+  377  ls
+  378  cd /
+  379  ls
+  380  ls usr
+  381  cd usr
+  382  ls
+  383  l s-l
+  384  ls -l
+  385  ls -a
+  386  ls -la
+  387  ls -h
+  388  ls -A
+  389  ls -a
+  390  ls -author
+  391  ls --author
+  392  ls --author -1
+  393  ls -1
+  394  cd ..
+  395  ls --author -1
+  396  ls --author
+  397  la -lah --author
+  398  la -lah 
+  399  la -c
+  400  la -cl
+  401  la 
+  402  ls
+  403  ls -c
+  404  ls -cl
+  405  ls -l
+  406  ls -clt
+  407  ls t
+  408  ls -t
+  409  ls -l
+  410  ls -c
+  411  ls -C
+  412  ls -Cl
+  413  ls -C
+  414  ls
+  415  cd music
+  416  cd Music
+  417  pwd
+  418  pwd -p
+  419  pwd -P
+  420  pwd -L
+  421  /bin/pwd -L
+  422  /bin/pwd -P
+  423  cd ..
+  424  cd MusicS
+  425  cd MusicSimbolico
+  426  pwd
+  427  pwd -P
+  428  pwd -L
+  429  exit
+  430  pwd
+  431  ls
+  432  cd /
+  433  pwd
+  434  ls
+  435  cd bin
+  436  pwd
+  437  ls
+  438  ls /lah
+  439  ls -lah
+  440  ls -d
+  441  ls /
+  442  cd etc
+  443  ls
+  444  cd ..
+  445  cd bin
+  446  c /
+  447  cd /
+  448  ls
+  449  cd mnt
+  450  ls
+  451  cd etc
+  452  cd /
+  453  cd etc
+  454  ls -lah
+  455  cd apt
+  456  ls
+  457  ls -lah
+  458  ped
+  459  pwd
+  460  cd ..
+  461  ls
+  462  cd ..
+  463  ls
+  464  cd opt
+  465  ls
+  466  cd containerd/
+  467  ls
+  468  cd ..
+  469  cd run
+  470  cd ..
+  471  cd run
+  472  ks
+  473  ls
+  474  cd user
+  475  ls
+  476  cd 1000/
+  477  ls
+  478  cd doc/
+  479  ls
+  480  cd by-app/
+  481  ls
+  482  pwd
+  483  pwd --help
+  484  pwd --version
+  485  \bin\pwd --version
+  486  /bin/pwd --version
+  487  ls
+  488  cd Music
+  489  pwd
+  490  pwd -L
+  491  cd ..
+  492  cd MusicSimbolico
+  493  pwd
+  494  pwd -P
+  495  pwd -L
+  496  pwd
+  497  pwd -S
+  498  ls
+  499  ls -a
+  500  mkdir inp
+  501  ls
+  502  cd inp
+  503  ls
+  504  ls ..
+  505  ls .. -a
+  506  touch .anotacoes
+  507  ls
+  508  ls -a
+  509  touch lista__material
+  510  ls
+  511  mkdir .pasta_oculta
+  512  ls
+  513  mkdir pasta_nao_oculta
+  514  ls
+  515  mv lista__material lista_material 
+  516  ls
+  517  ls -a
+  518  ls -lah
+  519  pwd
+  520  ls
+  521  ls -a
+  522  ls
+  523  ls -a
+  524  ls -lah
+  525  cd inp
+  526  ls
+  527  ls -A
+  528  ls
+  529  ls -a
+  530  ls -A
+  531  ls
+  532  ls -a
+  533  ls -A
+  534  ls
+  535  ls -a
+  536  ls -A
+  537  exit
+  538  ls -l 
+  539  ls -l --author
+  540  cd in
+  541  cd inp
+  542  ls
+  543  ls -l
+  544  ls --author
+  545  ls --author -l
+  546  ls -l
+  547  ls -l --author
+  548  ls
+  549  ls -l
+  550  ls -l --author
+  551  cd ..
+  552  ls -l
+  553  Dls -l
+  554  ls -l
+  555  cd inp
+  556  ls -l
+  557  ls -l --author
+  558  ls
+  559  ls -a
+  560  ls -A
+  561  cd inp
+  562  ls -b
+  563  ls
+  564  touch "arquivo 01"
+  565  ls
+  566  ls -b
+  567  touch informações
+  568  ls
+  569  ls -b
+  570  rm informações 
+  571  ls
+  572  ls -a
+  573  ls
+  574  ls -b
+  575  ls --escape
+  576  ls --block-size
+  577  ls --block-size=M
+  578  ls -l --block-size=M
+  579  ls -l --block-size=mM
+  580  ls -l --block-size=m
+  581  ls -l --block-size=g
+  582  ls -l --block-size=t
+  583  ls -l --block-size=bt
+  584  ls -l --block-size=b
+  585  ls -l --block-size=K
+  586  ls -l --block-size=KIB
+  587  ls -l --block-size=Kib
+  588  ls -l --block-size=KiB
+  589  cd inp
+  590  cd..
+  591  cd ..
+  592  mkdir inp2
+  593  ls
+  594  ls -l
+  595  cd inp2
+  596  vi t1.txt
+  597  ls
+  598  ls -l
+  599  cd ..
+  600  ls -l
+  601  cp history*.* ./inp2
+  602  ls
+  603  ls -l
+  604  cd inp2 ls -l
+  605  cd inp2
+  606  ls -l
+  607  cds ..
+  608  cd ..
+  609  cds ..
+  610  ls -l
+  611  ls -l --block-size=M
+  612  ls -l --block-size=k
+  613  cd inp
+  614  ls
+  615  ls -l 
+  616  ls -l
+  617  cd ..
+  618  ls
+  619  cd inp2
+  620  ls
+  621  ls -l
+  622  ls -la
+  623  ls -l --block-size=M
+  624  ls -l --block-size=k
+  625  ls -l --block-size=K
+  626  ls -l --block-size=KiB
+  627  ls -l --block-size
+  628  ls -l --block-size=B
+  629  ls -l --block-size=b
+  630  ls -l
+  631  ls -l --block-size=M
+  632  ls -l --block-size=MiB
+  633  ls -l --block-size=M
+  634  ls -l --block-size=K
+  635  ls -l --block-size=MiB
+  636  ls -l --block-size=TiB
+  637  ls -l --block-size=GiB
+  638  ls -l --block-size=G
+  639  ls -l --block-size=t
+  640  ls -l --block-size=T
+  641  touch ~teste01
+  642  ls
+  643  ls -B
+  644  rm ~teste01
+  645  ls
+  646  touch teste02~
+  647  ls
+  648  ls -B
+  649  cd inp
+  650  ls
+  651  ls -lah
+  652  touch notas.txt~
+  653  ls
+  654  ls -B
+  655  ls
+  656  ls -B
+  657  ls --ignore-backups
+  658  ls
+  659  ls -B
+  660  ls --ignore--backups
+  661  ls
+  662  ls -B
+  663  ls --ignore-backups
+  664  ls -B
+  665  ls --ignore-backups
+  666  sudo apt update
+  667  sudo apt upgrade
+  668  mkdir estudopwd
+  669  cd estudopwd/
+  670  nano pwd_exemplo_01.sh
+  671  ls
+  672  ls -lah
+  673  chmod +x pwd_exemplo_01.sh 
+  674  ls
+  675  ./pwd_exemplo_01.sh 
+  676  exit
+  677  ls
+  678  cd estudopwd
+  679  ls
+  680  nano pwd_exemplo_06.sh
+  681  chmod +x ./pwd_exemplo_06.sh 
+  682  ls
+  683  ls /lah
+  684  ls -lah
+  685  ./pwd_exemplo_06.sh 
+  686  code .
+  687  ./pwd_exemplo_06.sh 
+  688  ls
+  689  cat caminho.txt 
+  690  chmod +x pwd_exemplo_07.sh 
+  691  ./pwd_exemplo_07.sh 
+  692  ls
+  693  cat copias.log
+  694  rm copias.log 
+  695  ls -l
+  696  ./pwd_exemplo_07.sh 
+  697  cat copias.log
+  698  ls
+  699  ls ./backup 
+  700  cd b
+  701  cd backup
+  702  ls
+  703  ls -l
+  704  rm copias.log 
+  705  rm -rf backup 
+  706  ls
+  707  ./pwd_exemplo_07.sh 
+  708  ls
+  709  cat copias.log 
+  710  cd backup/
+  711  ls
+  712  cat arquivo_2023-04-29_14-56-33.txt 
+  713  cd..
+  714  ]cd ..
+  715  cd ..
+  716  ls
+  717  ls ./backup/
+  718  ls ./backup
+  719  chmod +x pwd_exemplo_08.sh 
+  720  ./pwd_exemplo_08.sh 
+  721  ls
+  722  cat pastas_criadas.log 
+  723  ls -r
+  724  lr -lah
+  725  ls -lahr
+  726  ls -l
+  727  ls -l pasta_nivel_1/
+  728  ls -l pasta_nivel_1
+  729  chmod +x pwd_exemplo_09.sh 
+  730  ./pwd_exemplo_09.sh 
+  731  ls
+  732  cd exemplo8/
+  733  ls
+  734  cd pasta_
+  735  cd pasta_1
+  736  ls
+  737  cd ..
+  738  cd pasta_2
+  739  ls
+  740  car arquivo_10_20230429162027.txt 
+  741  cat arquivo_10_20230429162027.txt 
+  742  cd ..
+  743  ./pwd_exemplo_09
+  744  ./pwd_exemplo_09.sh
+  745  cd exemplo9
+  746  ls
+  747  cd pasta_1
+  748  ls
+  749  cat arquivo_20230429162323.txt 
+  750  cd ..
+  751  cd pasta_2
+  752  ls
+  753  cat arquivo_20230429162323.txt 
+  754  cd ..
+  755  ls
+  756  cd Music
+  757  pwd
+  758  pwd ~
+  759  pwd ..
+  760  pwd -P | awk -F/ '{print $(NF-1)}
+  761  a
+  762  pwd -h
+  763  pwd -v
+  764  man pwd
+  765  pwd
+  766  pwd -L
+  767  cd ..
+  768  cd MusicSimbolico
+  769  pwd
+  770  cd..
+  771  cd ..
+  772  ls
+  773  cd estudopwd/
+  774  ls
+  775  code .
+  776  ./pwd_exemplo_10.sh 
+  777  ./pwd_exemplo_8.sh 
+  778  ls
+  779  chmod + x pwd_exemplo_08.sh 
+  780  chmod +x pwd_exemplo_08.sh 
+  781  ./pwd_exemplo_8.sh 
+  782  ./pwd_exemplo_08.sh 
+  783  pwd --version
+  784  /bin/pwd --version
+  785  ./pwd_exemplo_08.sh 
+  786  cd /tmp/atual
+  787  sudo ./pwd_exemplo_08.sh 
+  788  ./pwd_exemplo_06.sh 
+  789  ls
+  790  cat camino.txt
+  791  cat caminho.txt
+  792  ls
+  793  cd estudopwd
+  794  ls -l
+  795  pwd -L
+  796  ./pwd_exemplo_01.sh 
+  797  pwd 
+  798  pwd -L
+  799  ln -s . logicopwd
+  800  pwd
+  801  pwd -L
+  802  ln -s .$(pwd) logicopwd
+  803  pwd
+  804  pwd -L
+  805  ln -s $(pwd) logicopwd
+  806  rm logicopwd
+  807  ln -s $(pwd) logicopwd
+  808  pwd -L
+  809  pwd --help
+  810  echo $PWD
+  811  sudo ln -s $(pwd) logicopwd
+  812  ls
+  813  ls -lah
+  814  cd estudopwd
+  815  rm estudopwd
+  816  ls -lah
+  817  pwd
+  818  pwd -L
+  819  rm logicopwd
+  820  ls -lah
+  821  ln -s $(pwd) logico01
+  822  pwd -L
+  823  pwd -P
+  824  ls -lah
+  825  cd logico01
+  826  pwd
+  827  pwd -P
+  828  ./pwd_exemplo_01.sh 
+  829  pwd --help
+  830  pwd --version
+  831  \bin\pwd --version
+  832  history
+  833  /bin/pwd --version
+  834  chmod +x pwd_exemplo_05.sh 
+  835  ./pwd_exemplo_05.sh 
+  836  ./pwd_exemplo_06.sh 
+  837  cat caminho.txt 
+  838  ./pwd_exemplo_07.sh 
+  839  date
+  840  ./pwd_exemplo_08.sh 
+  841  cd ..
+  842  cd -
+  843  cd ..
+  844  ls
+  845  ls -lah
+  846  ./pwd_exemplo_08.sh 
+  847  ls -lah
+  848  rm logico01
+  849  ls -lah
+  850  ./pwd_exemplo_08.sh 
+  851  ls -lah
+  852  ln -s $(pwd) simbolico08
+  853  ls -lah
+  854  ln -s $(pwd) simbolico08
+  855  ls -lah
+  856  cd simbolico08
+  857  cd -
+  858  ./pwd_exemplo_08.sh 
+  859  ./pwd_exemplo_09.sh 
+  860  ./pwd_exemplo_10.sh 
+  861  ls
+  862  git status
+  863  mvn quarkus:dev
+  864  sudo apt install maven
+  865  mvn quarkus:dev
+  866  ls
+  867  mvn quarkus:dev
+  868  mvn quarkus:dev
+  869  sudo tar -xf apache-maven-3.9.3-bin.tar.gz -C /opt
+  870  ls
+  871  sudo tar -xf apache-maven-3.9.3-bin.tar.gz -C /opt
+  872  ls
+  873  nano ~/.bashrc
+  874  source ~/.bashrc
+  875  mvn -v
+  876  exit
+  877  sudo apt update
+  878  sudo apt upgrade
+  879  sudo apt autoremove
+  880  ls
+  881  cd codhuman
+  882  ls
+  883  cd git
+  884  ls
+  885  cd ..
+  886  ssh-keygen -t ed25519 -C "codhumandevmaster@gmail.com"
+  887  cd /home/reinaldo/.ssh/id_ed25519
+  888  cd /home/reinaldo/.ssh
+  889  ls
+  890  sudo apt-get install xclip
+  891  xclip -selection clipboard -in file.txt
+  892  xclip -selection clipboard -in id_ed25519_b.pub
+  893  ls
+  894  ls -lah
+  895  xclip -selection clipboard -in id_ed25519.pub
+  896  cat id_ed25519.pub
+  897  cd -
+  898  ls
+  899  cp id*.* ~/.ssh
+  900  cd -
+  901  ls
+  902  cat id_ed25519_b.pub 
+  903  cd -
+  904  ls
+  905  rm id_*.*
+  906  ls
+  907  rm id_*
+  908  ls
+  909  git clone git@github.com:codhuman/codhuman-hardware-scanner.git
+  910  ls
+  911  cd codhuman-hardware-scanner/
+  912  ls
+  913  code .
+  914  java -verwion
+  915  java -version
+  916  sudo apt install openjdk-8-jre-headless
+  917  sudo apt install openjdk-11-jre-headless
+  918  sudo apt install openjdk-17-jre-headless
+  919  ls
+  920  mvn quarkus:dev
+  921  java -version
+  922  mvn --version
+  923  echo $JAVA_HOME
+  924  echo $MAVEN_HOME
+  925  nano ~/.bashrc
+  926  source ~/.bashrc
+  927  echo $JAVA_HOME
+  928  echo $MAVEN_HOME
+  929  mvn quarkus:dev
+  930  update-java-alternatives -l
+  931  nano ~/.bashrc
+  932  echo $JAVA_HOME
+  933  source ~/.bashrc
+  934  echo $JAVA_HOME
+  935  mvn quarkus:dev
+  936  mvn dependency:purge-local-repository
+  937  mvn -v
+  938  sudo apt remove maven
+  939  sudo rm -rf /opt/apache-maven
+  940  sudo tar -xf apache-maven-<versao>.tar.gz -C /opt
+  941  sudo tar -xf apache-maven-3.8.4.tar.gz -C /opt
+  942  sudo tar -xf apache-maven-3.6.3.tar.gz -C /opt
+  943  mvn quarkus:dev
+  944  source ~/.bashrc
+  945  mvn quarkus:dev
+  946  mvn -e quarkus:dev
+  947  ip route | grep default | awk '{print $3}'
+  948  ifconfig
+  949  ping localhost
+  950  mvn -e quarkus:dev
+  951  ping 192.168.233.1
+  952  mvn -e quarkus:dev
+  953  git status
+  954  git push -u origin main
+  955  eval $(ssh-agent)
+  956  history
+  957  ssh-add ~/.ssh/id_ed25519_b.pub 
+  958  chmod 600 /home/reinaldo/.ssh/id_ed25519_b.pub
+  959  ssh-add ~/.ssh/id_ed25519_b.pub 
+  960  ssh -i /home/reinaldo/.ssh/id_ed25519 user@hostname
+  961  ssh -i /home/reinaldo/.ssh/id_ed25519 codhumandevmaster@gmail.com
+  962  ssh-add /home/reinaldo/.ssh/id_ed25519
+  963  git status
+  964  git push -u origin main
+  965  git remote
+  966  git remote -v
+  967  eval $(ssh-agent)
+  968  ssh-add ~/.ssh/id_ed25519_b.pub 
+  969  cd ~/.ssh
+  970  cat id_ed25519_b.pub 
+  971  ssh-add id_ed25519_b.pub 
+  972  ssh-add /home/reinaldo/.ssh/id_ed25519_b
+  973  ssh-add id_ed25519_b 
+  974  ls
+  975  cd -
+  976  ls
+  977  cd ..
+  978  ls
+  979  cd ..
+  980  ls
+  981  cd -
+  982  ssh-keygen -t ed25519 -C "codhumandevmaster@gmail.com"
+  983  cd ~/.ssh
+  984  ls
+  985  ls -lah
+  986  rm id_ed25519_b.pub 
+  987  LS
+  988  ls
+  989  ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_b -C "codhumandevmaster@gmail.com"
+  990  ls
+  991  cd -
+  992  cd cd codhuman-hardware-scanner/
+  993  ls
+  994  cd codhuman-hardware-scanner/
+  995  cd ..
+  996  rm id*
+  997  ls
+  998  cd codhuman-hardware-scanner/
+  999  ls
+ 1000  cat ~/.ssh/id_ed25519_b.pub 
+ 1001  git status
+ 1002  ssh-add ~/.ssh/id_ed25519_b.pub
+ 1003  chmod 600 /home/reinaldo/.ssh/id_ed25519_b.pub
+ 1004  ssh-add ~/.ssh/id_ed25519_b.pub
+ 1005  ssh-add ~/.ssh/id_ed25519_b
+ 1006  git push -u origin main
+ 1007  exit
+ 1008  ifconfig
+ 1009  mvn quarkus:dev
+ 1010  ifconfig
+ 1011  mvn quarkus:dev
+ 1012  sudo add-apt-repository ppa:solaar-unifying/ppa
+ 1013  sudo apt update
+ 1014  sudo apt upgrade
+ 1015  sudo apt install solaar
+ 1016  solaar
+ 1017  mvn quarkus:dev
+ 1018  ifconfig
+ 1019  mvn quarkus:dev
+ 1020  sudo iptables -L
+ 1021  sudo iptables -A INPUT -p tcp --dport 880 -j ACCEPT
+ 1022  sudo iptables -L
+ 1023  sudo iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
+ 1024  sudo iptables -L
+ 1025  sudo iptables-save | sudo tee /etc/sysconfig/iptables
+ 1026  ifconfig
+ 1027  sudo apt-get install iptables-persistent
+ 1028  sudo iptables -L
+ 1029  ifconfig
+ 1030  sudo ufw disable
+ 1031  sudo ufw allow 8080
+ 1032  sudo ufw status numbered
+ 1033  sudo ufw enable
+ 1034  sudo ufw allow 8080
+ 1035  sudo ufw status numbered
+ 1036  ifconfig
+ 1037  git push -u origin main
+ 1038  ssh-add ~/.ssh/id_ed25519_b 
+ 1039  git push -u origin main
+ 1040  eval $(ssh-agent)
+ 1041  ssh-add ~/.ssh/id_ed25519_b 
+ 1042  git push -u origin main
+ 1043  history > history01.txt
